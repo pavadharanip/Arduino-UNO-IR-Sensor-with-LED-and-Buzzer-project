@@ -48,6 +48,7 @@ This project demonstrates how to interface an IR sensor module with an Arduino U
 |---|---|
 | Positive (+) | Digital Pin 8 |
 | Negative (−) | GND |
+[View Arduino Code](./IR%20sensor.ino)
 
 ## **⚙️ Working Principle**
 
@@ -65,6 +66,7 @@ This project demonstrates how to interface an IR sensor module with an Arduino U
 |---|---|---|
 | LOW (0) | ON | ON |
 | HIGH (1) | OFF | OFF |
+![IR Sensor with Buzzer Output](./ir%20buzz.jpeg)
 
 **Note:** The blue potentiometer on the IR sensor module adjusts its detection threshold. The output logic may vary depending on the module configuration.
 
