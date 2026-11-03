@@ -49,39 +49,6 @@ This project demonstrates how to interface an IR sensor module with an Arduino U
 | Positive (+) | Digital Pin 8 |
 | Negative (−) | GND |
 
-## **💻 Arduino Source Code**
-
-```cpp
-int sensorPin = 2;
-int ledPin = 7;
-int buzzerPin = 8;
-
-void setup() {
-  pinMode(sensorPin, INPUT);
-  pinMode(ledPin, OUTPUT);
-  pinMode(buzzerPin, OUTPUT);
-
-  Serial.begin(9600);
-}
-
-void loop() {
-  int sensorValue = digitalRead(sensorPin);
-
-  Serial.println(sensorValue);
-
-  if (sensorValue == LOW) {
-    digitalWrite(ledPin, HIGH);
-    digitalWrite(buzzerPin, HIGH);
-  }
-  else {
-    digitalWrite(ledPin, LOW);
-    digitalWrite(buzzerPin, LOW);
-  }
-
-  delay(100);
-}
-```
-
 ## **⚙️ Working Principle**
 
 1. The IR transmitter emits infrared light.
